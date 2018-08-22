@@ -1,0 +1,131 @@
+body, html{
+	margin: 0;
+	padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+	font-size: 15px;
+	color: white;
+	font-family: 'Lato', sans-serif;
+}
+
+body{
+	background: #F2994A;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #F2C94C, #F2994A);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #F2C94C, #F2994A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container{
+	max-width: 580px;
+	margin: 0 auto 0 auto;
+	padding: 20px;
+	/*border: 2px solid black;*/
+}
+
+.todo-title{
+	text-align: center;
+	padding: 14px;
+	background-color: #636e72;
+	letter-spacing: 1px;
+}
+
+.todo-list{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style-type: none;
+	/*margin: 0;*/
+	padding: 10px;
+	border: 2px solid black;
+	margin-bottom: 2px;
+    color: black;
+}
+.todo-list li:nth-child(even) {
+    background-color: #fbefcb;
+}
+.todo-list li:nth-child(odd) {
+    background-color: #dfe6e9;
+}
+ul i{
+	/*padding: 2px;*/
+	height: 30px;
+	width: 30px;
+	float: right;
+	color: red;
+	text-align: right;
+}
+
+.task-input input{
+	width: 100%;
+	padding: 10px;
+	font-size: 15px;
+	margin-bottom: 2px;
+}
+
+.task-input input:focus{
+	font-size: 19px;
+}
+
+.todo-list li:hover{
+	/*background-color: red;*/
+	background-color: #636e72;
+	/*font-size: 18px;*/
+	color: white;
+	transition:font-size 0.5s;
+	-moz-transition:font-size 0.5s; /* Firefox 4 */
+    -webkit-transition:font-size 0.5s;
+    transition:color 0.5s;
+    -moz-transition:color 0.5s; /* Firefox 4 */
+    -webkit-transition:color 0.5s; /* Safari and Chrome */
+}
+
+.checked{
+	text-decoration: line-through;
+	color: #555;
+}
+
+.hovered{
+	border-style: dashed;
+}
+.hold{
+	border: 2px solid black;
+}
+
+.hidden{
+	display:none;
+}
+
+.container{
+	box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+}
+
+.progress{
+	max-width: 580px;
+	background-color: white;
+	height: 15px;
+	margin: 0 auto 20px auto;
+}
+.completion{
+	height: 100%;
+	width: 100%;
+	background-color: blue;
+	transition: width 1s;
+}
+.progress-text{
+	max-width: 580px;
+	background-color: transparent;
+	color: transparent;
+	height: 40px;
+	font-size: 20px;
+	text-align: center;
+	margin: 140px auto 10px auto;
+}
